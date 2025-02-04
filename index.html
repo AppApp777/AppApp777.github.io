@@ -2,10 +2,112 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>我的 GitHub Pages 网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人博客</title>
+  <!-- 引入 Google 字体 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    /* 全局基础设置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* 顶部导航区域 */
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 700;
+    }
+    /* 主体区域 */
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    article {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    article h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    article p {
+      margin-bottom: 10px;
+    }
+    /* 页脚 */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-top: 1px solid #eaeaea;
+      color: #777;
+    }
+    /* 响应式设计 */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>欢迎来到我的网站！</h1>
-  <p>这是通过 GitHub Pages 搭建的静态网页。</p>
+  <!-- 顶部区域 -->
+  <header>
+    <h1>我的个人博客</h1>
+    <nav>
+      <a href="#">首页</a>
+      <a href="#">关于我</a>
+      <a href="#">归档</a>
+      <a href="#">联系</a>
+    </nav>
+  </header>
+  
+  <!-- 主要内容区域 -->
+  <main>
+    <article>
+      <h2>文章标题1</h2>
+      <p>这是文章的摘要或预览内容，点击阅读全文了解更多详情。</p>
+    </article>
+    
+    <article>
+      <h2>文章标题2</h2>
+      <p>这是另一篇文章的摘要或预览内容，展示了博客的现代设计风格。</p>
+    </article>
+    
+    <!-- 可以继续添加更多文章 -->
+  </main>
+  
+  <!-- 页脚区域 -->
+  <footer>
+    <p>&copy; 2025 我的个人博客. All rights reserved.</p>
+  </footer>
 </body>
 </html>
